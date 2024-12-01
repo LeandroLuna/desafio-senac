@@ -56,9 +56,11 @@ const Quiz = () => {
           isLastQuestion={isLastQuestion}
         />
       ) : (
-        <div className="results">
-          <h2>Quiz finalizado!</h2>
-          <p>Você acertou {score} de {questions.length} questões.</p>
+        <div className="quiz__results">
+          <h2 className="quiz__results-title">Quiz finalizado!</h2>
+          <p className="quiz__results-text">
+            Você acertou {score} de {questions.length} questões.
+          </p>
         </div>
       )}
     </div>

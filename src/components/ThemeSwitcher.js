@@ -6,7 +6,11 @@ const ThemeSwitcher = ({ setTheme }) => {
   };
 
   return (
-    <select onChange={handleThemeChange}>
+    <select
+      className="theme-switcher"
+      onChange={handleThemeChange}
+      aria-label="Escolha um tema"
+    >
       <option value="theme1">Tema 1</option>
       <option value="theme2">Tema 2</option>
     </select>

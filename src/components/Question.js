@@ -19,29 +19,42 @@ const Question = ({ data, onAnswer, onNext, isLastQuestion }) => {
 
   return (
     <div className="question">
-      <h3>{data.text}</h3>
-      <img src={data.image} alt="Ilustração da questão" />
-      <div className="options">
+      <h3 className="question__text">{data.text}</h3>
+      <img
+        className="question__image"
+        src={data.image}
+        alt="Ilustração da questão"
+        aria-hidden="true"
+      />
+      <div className="question__options">
         {data.options.map((option, index) => (
-          <label key={index}>
+          <label className="question__option" key={index}>
             <input
               type="radio"
               name="option"
               value={index}
               checked={selectedOption === index}
               onChange={() => setSelectedOption(index)}
+              className="question__input"
+              aria-checked={selectedOption === index}
             />
             {option}
           </label>
         ))}
       </div>
       {!showFeedback ? (
-        <button onClick={handleSubmit}>Confirmar resposta</button>
+        <button
+          className="question__submit-button"
+          onClick={handleSubmit}
+          aria-label="Confirmar resposta"
+        >
+          Confirmar resposta
+        </button>
       ) : (
-        <Feedback 
-          isCorrect={selectedOption === data.correct} 
-          onNext={onNext} 
-          nextButtonText={isLastQuestion ? 'Finalizar quiz' : 'Próxima pergunta'}  
+        <Feedback
+          isCorrect={selectedOption === data.correct}
+          onNext={onNext}
+          nextButtonText={isLastQuestion ? 'Finalizar quiz' : 'Próxima pergunta'}
         />
       )}
     </div>
