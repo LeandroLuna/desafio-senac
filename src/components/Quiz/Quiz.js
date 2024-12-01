@@ -7,28 +7,28 @@ const questions = [
     text: 'Lorem ipsum dolor sit amet?',
     options: ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'],
     correct: 0,
-    image: '/assets/images/question1.jpg',
+    image: '/assets/images/image1.jpg',
   },
   {
     id: 2,
     text: 'Consectetur adipiscing elit?',
     options: ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'],
     correct: 1,
-    image: '/assets/images/question2.jpg',
+    image: '/assets/images/image2.jpg',
   },
   {
     id: 3,
     text: 'Sed do eiusmod tempor incididunt ut labore?',
     options: ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'],
     correct: 2,
-    image: '/assets/images/question3.jpg',
+    image: '/assets/images/image3.jpg',
   },
   {
     id: 4,
     text: 'Et dolore magna aliqua?',
     options: ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'],
     correct: 3,
-    image: '/assets/images/question4.jpg',
+    image: '/assets/images/image4.jpg',
   }
 ];
 
@@ -48,13 +48,21 @@ const Quiz = () => {
 
   return (
     <div className="quiz">
+      <h2>Quizz</h2>
       {currentQuestion < questions.length ? (
-        <Question
-          data={questions[currentQuestion]}
-          onAnswer={handleAnswer}
-          onNext={handleNext}
-          isLastQuestion={isLastQuestion}
-        />
+        <>
+          <Question
+            data={questions[currentQuestion]}
+            onAnswer={handleAnswer}
+            onNext={handleNext}
+            isLastQuestion={isLastQuestion}
+          />
+          <div className="quiz__progress">
+            <p>
+              Acertos: {score < 10 ? `0${score}` : score} | Questão: {currentQuestion + 1} de {questions.length}
+            </p>
+          </div>
+        </>
       ) : (
         <div className="quiz__results">
           <h2 className="quiz__results-title">Quiz finalizado!</h2>

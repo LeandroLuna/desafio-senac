@@ -4,7 +4,9 @@
 
 @import 'App';
 
-@import 'components/Quiz';
-@import 'components/Question';
+@import 'layouts/Header.scss';
+
+@import 'components/Quiz/Quiz';
+@import 'components/Quiz/Question';
+@import 'components/Quiz/Feedback';
 @import 'components/ThemeSwitcher';
-@import 'components/Feedback';

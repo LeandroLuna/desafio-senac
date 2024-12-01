@@ -1,0 +1,33 @@
+.question {
+    
+    .question__panel {
+        display: flex;
+
+        .question__left-panel {
+            width: 40%;
+
+            .question__image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .question__right-panel {
+            width: 60%;
+            margin: 1rem 2rem;
+
+            .question__options {
+                .question__option {
+                    display: block;
+                    margin-top: 20px;
+                }
+            }
+
+            .question__submit-button {
+                display: flex;
+                margin: 20px auto;
+            }
+        }
+    }
+}

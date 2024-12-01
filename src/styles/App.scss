@@ -2,3 +2,10 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+    margin: 0 auto;
+}
