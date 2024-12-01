@@ -8,7 +8,7 @@ import SectionFour from '../components/SectionFour';
 const ModulePage = () => {
   return (
     <div className="module-page container">
-      <h1><span>Módulo 01</span> | Exemplo de subtítulo</h1>
+      <h1 className="module-page__title"><span className="module-page__title--bold">Módulo 01</span> | Exemplo de subtítulo</h1>
       <SectionOne />
       <SectionTwo />
       <SectionThree />

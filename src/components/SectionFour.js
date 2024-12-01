@@ -3,7 +3,7 @@ import React from 'react';
 const SectionFour = () => {
   return (
     <div className="section-four">
-      <div>
+      <div className="section-four__list">
         <ul>
           <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ipsum convallis, gravida ante at, congue odio. Maecenas pulvinar id est ac fauci- bus. Aliquam vel metus sollicitudin, viverra massa at, convallis est.
@@ -19,7 +19,7 @@ const SectionFour = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="section-four__list">
         <ul>
           <li>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ipsum convallis, gravida ante at, conmassa at, convallis est.

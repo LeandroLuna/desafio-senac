@@ -1,12 +1,17 @@
 @import 'utils/_variables';
 @import 'utils/_themes';
-@import 'utils/_mixins.scss';
+@import 'utils/_mixins';
+// @import 'utils/reset'; // Comentado para deixar o layout mais agrádavel
 
 @import 'App';
 
-@import 'layouts/Header.scss';
+@import 'layouts/Header';
 
 @import 'components/Quiz/Quiz';
 @import 'components/Quiz/Question';
 @import 'components/Quiz/Feedback';
 @import 'components/ThemeSwitcher';
+@import 'components/SectionOne';
+@import 'components/SectionTwo';
+@import 'components/SectionThree';
+@import 'components/SectionFour';

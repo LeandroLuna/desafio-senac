@@ -1,0 +1,30 @@
+.section-one__content{
+    display: flex;
+    
+    .section-one__content-left{
+        width: 40%;
+
+        .section-one__image{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .section-one__content-right{
+        width: 60%;
+        margin-left: 2rem;
+
+        .section_one__two-columns{
+            display: flex;
+
+            .section-one__column-one{
+                width: 55%;
+            }
+
+            .section-one__column-two{
+                width: 45%;
+            }
+        }
+    }
+}
