@@ -11,7 +11,10 @@ const Question = ({ data, onAnswer, onNext, isLastQuestion }) => {
   }, [data]);
 
   const handleSubmit = () => {
-    if (selectedOption === null) return;
+    if (selectedOption === null) {
+      alert("Por favor, selecione uma opção antes de continuar.");
+      return;
+    }
     const isCorrect = selectedOption === data.correct;
     onAnswer(isCorrect);
     setShowFeedback(true);

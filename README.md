@@ -2,6 +2,8 @@
 
 Este repositório contém o código fonte de uma aplicação web desenvolvida para o desafio técnico da instituição SENAC.
 
+Deploy da aplicação na AWS: [Desafio SENAC](https://main.d2jqtd5cirmb4e.amplifyapp.com/)
+
 ## Descrição do desafio
 
 O objetivo do desafio foi desenvolver uma página web responsiva que incluísse um **combobox para troca de temas**, um **quiz interativo com feedbacks** e **utilização de estilos SASS**. O projeto segue as seguintes orientações:
@@ -104,6 +106,8 @@ Embora o projeto atenda ao objetivo inicial, existem várias melhorias que podem
    
 ### 5. **Desempenho do Frontend**
    - **Minificação e otimização de CSS/JS**: configurar ferramentas de build (como Webpack) para minificar o CSS e o JavaScript, reduzindo o tamanho final do bundle e melhorando os tempos de carregamento.
+   - **Renderização SSR/SSG/Hibrída**: implementar renderização do lado do servidor (SSR), renderização estática (SSG) ou renderização híbrida para melhorar o desempenho e a SEO da aplicação.
+   - **Gerenciamento de estado com Context API ou Redux**: pensando na escalabilidade do quiz, considerar a utilização de um gerenciador de estado para manter a consistência dos dados e facilitar a comunicação entre componentes.
 
 ### 6. **Persistência de tema**
    - Implementar o armazenamento do tema selecionado no **localStorage** ou **cookies** para que a preferência de tema do usuário seja lembrada entre as sessões.
