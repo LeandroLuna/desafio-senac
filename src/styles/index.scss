@@ -1,4 +1,6 @@
-@import '_variables';
+@import 'utils/_variables';
+@import 'utils/_themes';
+@import 'utils/_mixins.scss';
 
 @import 'App';
 
