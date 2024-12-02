@@ -1,6 +1,7 @@
 .question {
     .question__panel {
         display: flex;
+        background-color: var(--septenary-color);
 
         .question__left-panel {
             width: 40%;
@@ -8,24 +9,36 @@
             .question__image{
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: fill;
             }
         }
 
         .question__right-panel {
             width: 60%;
             margin: 1rem 2rem;
+            
+            .question__text {
+                color: var(--octonary-color);
+            }
 
             .question__options {
                 .question__option {
                     display: block;
                     margin-top: 20px;
+
+                    .question__input{
+                        margin-right: 20px;                       
+                    }
                 }
             }
 
             .question__submit-button {
                 display: flex;
                 margin: 20px auto;
+                background-color: transparent;
+                color: var(--quinary-color);
+                border-color: var(--quinary-color);
+                padding: 10px 25px;
             }
         }
     }

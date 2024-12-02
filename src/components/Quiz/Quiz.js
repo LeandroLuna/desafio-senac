@@ -48,7 +48,7 @@ const Quiz = () => {
 
   return (
     <div className="quiz">
-      <h2>Quizz</h2>
+      <h2 className="quiz__title">Quizz</h2>
       {currentQuestion < questions.length ? (
         <>
           <Question
@@ -59,14 +59,14 @@ const Quiz = () => {
           />
           <div className="quiz__progress">
             <p>
-              Acertos: {score < 10 ? `0${score}` : score} | Questão: {currentQuestion + 1} de {questions.length}
+              Acertos: {score < 10 ? `0${score}` : score} <span className="progress__divider">|</span> Questão: {currentQuestion + 1} de {questions.length}
             </p>
           </div>
         </>
       ) : (
         <div className="quiz__results">
-          <h2 className="quiz__results-title">Quiz finalizado!</h2>
-          <p className="quiz__results-text">
+          <h2 className="results__title">Quiz finalizado!</h2>
+          <p className="results__text">
             Você acertou {score} de {questions.length} questões.
           </p>
         </div>

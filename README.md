@@ -46,7 +46,7 @@ As principais tecnologias e ferramentas utilizadas para o desenvolvimento deste 
 
 <!-- Incluir capturas de tela que demonstrem a troca de temas, o quiz e o feedback interativo. -->
 
-## Como Executar o Projeto
+## Como executar o projeto
 
 Siga as etapas abaixo para rodar o projeto em sua máquina local:
 
@@ -54,9 +54,9 @@ Siga as etapas abaixo para rodar o projeto em sua máquina local:
 - Node.js (versão 22 ou superior)
 - npm ou yarn
 
-### Passo a Passo:
+### Passo a passo:
 
-1. **Clone o Repositório**:
+1. **Clone o repositório**:
    ```bash
     git clone https://github.com/LeandroLuna/desafio-senac.git
     cd desafio-senac
@@ -111,8 +111,6 @@ Embora o projeto atenda ao objetivo inicial, existem várias melhorias que podem
 
 ### 6. **Persistência de tema**
    - Implementar o armazenamento do tema selecionado no **localStorage** ou **cookies** para que a preferência de tema do usuário seja lembrada entre as sessões.
-
-> OBS.: Algumas dessas melhorias podem ser visualizadas no **PR aberto da branch `dev` com a `main`**. Focando **somente no frontend**, essas sugestões buscam aprimorar a qualidade do código, a experiência do usuário e a performance da aplicação, tornando-a mais robusta e acessível.
 
 ## Licença
 

@@ -11,17 +11,32 @@ const Feedback = ({ isCorrect, onNext, nextButtonText }) => (
           <FaTimesCircle color="red" size={24} aria-label="Resposta errada" />
         )}
       </div>
-      <p className="feedback__text">
-        {isCorrect ? 'Correto!' : 'Errado!'}
-      </p>
+      <div className="feedback__text">
+        {isCorrect ? (
+          <>
+            <h4>Parabéns!</h4>
+            <p>
+              Aliquam vel metus sollicitudin, viverra massa at, convallis est.
+            </p>
+          </>
+        )
+        : (
+          <>
+            <h4>Que pena, você errou!</h4>
+            <p>
+              Quisque eget ultrices metus. Vestibulum ultricies lectus nulla, sit amet maxi mus neque bibendum id. Nulla elementum consequat dapibus.
+            </p>
+          </>
+        )}
+        <button
+          className="feedback__next-button"
+          onClick={onNext}
+          aria-label={nextButtonText}
+        >
+        {nextButtonText}
+        </button>
+      </div>
     </div>
-    <button
-      className="feedback__next-button"
-      onClick={onNext}
-      aria-label={nextButtonText}
-    >
-      {nextButtonText}
-    </button>
   </>
 );
 

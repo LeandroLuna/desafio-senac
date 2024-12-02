@@ -32,7 +32,7 @@ const Question = ({ data, onAnswer, onNext, isLastQuestion }) => {
           />
         </div>
         <div className="question__right-panel">
-          <p className="question__text"><span>{data.id}</span> {data.text}</p>
+          <p className="question__text"><span>{data.id < 10 ? `0${data.id}` : data.id}</span> {data.text}</p>
           <div className="question__options">
             {data.options.map((option, index) => (
               <label className="question__option" key={index}>
@@ -62,7 +62,7 @@ const Question = ({ data, onAnswer, onNext, isLastQuestion }) => {
         <Feedback
           isCorrect={selectedOption === data.correct}
           onNext={onNext}
-          nextButtonText={isLastQuestion ? 'Finalizar quiz' : 'Próxima pergunta'}
+          nextButtonText={isLastQuestion ? 'Finalizar quiz' : 'Próximo'}
         />
       )}
     </div>

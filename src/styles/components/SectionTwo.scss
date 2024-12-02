@@ -1,4 +1,12 @@
 .section-two{
     padding: 1rem 3rem;
-    background-color: green;
+    background-color: var(--secondary-color);
+
+    .section-two__title{
+        color: var(--quaternary-color);
+    }
+
+    .section-two__text{
+        color: var(--senary-color);
+    }
 }
