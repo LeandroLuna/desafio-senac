@@ -44,7 +44,8 @@ As principais tecnologias e ferramentas utilizadas para o desenvolvimento deste 
 
 ## Demonstração
 
-<!-- Incluir capturas de tela que demonstrem a troca de temas, o quiz e o feedback interativo. -->
+![Tema 1](https://github.com/user-attachments/assets/831e39d2-523a-450b-9823-9d5f1b6248d7)
+![Tema 2](https://github.com/user-attachments/assets/901f306b-e119-4a8d-a562-9e51085d3334)
 
 ## Como executar o projeto
 
