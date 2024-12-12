@@ -90,7 +90,7 @@ Embora o projeto atenda ao objetivo inicial, existem várias melhorias que podem
      - Definir interfaces para as props dos componentes (`Question`, `Feedback`, `Quiz`, etc.) para garantir a consistência no uso de dados.
      - Tipar as variáveis de estado (como `selectedOption`, `showFeedback`, `currentQuestion`) para evitar erros de tipo e melhorar a manutenção do código.
    
-### 2. **Melhorias na Rrsponsividade**
+### 2. **Melhorias na responsividade**
    - **Ajustes finais de responsividade**: embora o projeto seja responsivo, pode-se realizar alguns ajustes para garantir que todos os componentes se comportem bem em dispositivos menores (como tablets e smartphones). Isso pode incluir:
      - **Fontes responsivas**: utilizar unidades relativas (como `em`, `rem`, `%`) para garantir que o tamanho das fontes seja adequado em todas as telas.
      - **Menus e botões**: ajustar o layout dos botões e menus para garantir que sejam acessíveis e usáveis em dispositivos móveis.
